@@ -1,0 +1,415 @@
+@font-face {
+    font-family: 'conneqt_boldregular';
+    src: url('./assets/conneqt_bold-webfont.woff') format('woff2'),
+         url('./assets/conneqt_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oktah_round_light';
+    src: url('./assets/oktah_round_light-webfont-BF6407f0f55776f.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'conneqt_regularregular';
+    src: url('./assets/conneqt_regular-webfont.woff2') format('woff2'),
+         url('./assets/conneqt_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'goudy_old_style_extraboldRg';
+    src: url('./assets/goudy_old_style_extrabold_regular-webfont.woff2') format('woff2'),
+         url('./assets/goudy_old_style_extrabold_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: arial;   
+}
+body{
+    min-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    background-image: linear-gradient(to bottom right,#fff1ad,#ffb3ef);
+}
+header{
+    display: flex;
+    background: #ff7070;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 4px 10%;
+}
+header img{
+    width: 40px;
+}
+.navbar{
+    display: flex;
+    padding: 0 10px;
+    align-items: center; 
+    justify-content: space-around;
+    width: 100%;  
+}
+.navbar a{
+    color: black;
+    font-size: 15px;
+    font-family: 'goudy_old_style_extraboldRg';
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+}
+.container1{
+    width: 100%;
+}
+
+.container1{
+    display: flex;
+    height: 93vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 50%;
+    width: 89rem;
+    padding: 2rem 0%;
+}
+.left-container{
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 5%;
+}
+.left-container h1{
+    letter-spacing: 3px;
+    font-weight:700;
+    font-size:50px;
+    font-family: 'conneqt_boldregular';
+    letter-spacing: 8px;
+}
+.left-container p{
+    letter-spacing: 0.1px;
+    margin-top: 2rem;
+    font-size: 18px;
+    color: #140c09d3;
+    padding-bottom: 2rem;
+    line-height: 2rem;
+    font-family: 'Oktah_round_light';
+    font-weight: bold;
+}
+.left-container button{
+    padding:1rem 5rem;
+    font-size: 15px;
+    background: #ff7070;
+    border: none;
+    color:#e2e1e1ea;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+}
+.right-container{
+    align-items: center;
+    width: 50rem;
+}
+#burger1{
+    display:none;
+}
+#burger{
+    display:none;
+}
+ .right-container img{
+    object-fit: cover;
+    object-position: 80%;
+}
+.container2{
+    display: flex;
+    gap:20px;
+    padding:5rem 0%;
+}
+.left-img{
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    padding-left: 6rem;
+    gap: 9px;
+}
+.right-img{
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+.left-img img{
+    width: 265px;
+    height: 220px;
+    object-fit:cover;
+}
+.right-img img{
+    width:255px;
+    height: 450px;
+    object-fit: cover;
+}
+.right-block{
+    width: 510px;
+    height: 250px;
+    padding-left: 2rem;
+    padding-top: 1.8rem;
+    margin-left: 5rem;
+    margin-top: 13rem;
+    background: #ff7070;
+}
+.right-block p{
+    font-size: 18px;
+    font-weight:bold;
+    font-family: 'Oktah_round_light';
+    letter-spacing: 1px;
+}
+.right-block h1{
+    padding-top: 18px;
+    padding-bottom: 20px;
+    font-size: 48px;
+    letter-spacing: 0.3rem;
+    font-weight:100;
+    font-family: 'conneqt_boldregular';
+}
+.clicker{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+.clicker p{
+    font-style: none;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+}
+.clicker img{
+    width: 25px;
+    height:25px;
+}
+.bottom{
+    display: flex;
+    gap: 15px;
+}
+
+@media only screen and (max-width:1440px){
+    .right-container img{
+        width: 50rem;
+    }
+    .navbar a{
+        font-size: 22px;
+        gap: 10px;
+    }
+    .right-container img{
+        width: 46rem;
+        height: 41rem;
+        object-fit: cover;
+        object-position: 40%;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .navbar a{
+        font-size: 18px;
+        letter-spacing: 0.2rem;
+    }
+    .right-container img{
+        width: 40rem;
+        height: 33rem;
+        object-fit: cover;
+        object-position: 50%;
+    }
+    .container1{
+        width: 64rem;
+    }
+    .left-container h1{
+        font-size: 38px;
+    }
+    .left-container p{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .left-container button{
+        padding: 8px 20px;
+        width: 10rem;
+    }
+    .right-block{
+        width: 24rem;
+        height: 15rem;
+    }
+    .container2{
+        margin-left: -3rem;
+    } 
+    .right-block h1{
+        font-size: 35px;
+        padding-bottom: 2rem;
+        padding-top: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:768px){
+    
+    .navbar a{
+        font-size: 13px;
+    }
+    .navbar li{
+        padding: 10px 0;
+    }
+    .left-container h1{
+        font-size: 30px;
+    }
+    .left-container p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .right-container img{
+        height: 520px;
+        width: 29rem;
+        object-fit: cover;
+    }
+    .right-container{
+        padding-left:25px;
+    }
+    .container1 {
+        width: 48rem;
+        padding-top: -5rem;
+    }
+    .bottom{
+        display: flex;
+        padding-left: 4rem;
+        gap: 15px;
+        margin-top: -4rem;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .right-block{
+        margin-top: -4rem;
+        margin-left: 12rem;
+        width: 30rem;
+        height: 10rem;
+        padding-left: 5rem;
+    }
+    .right-block h1{
+        font-size: 20px;
+    }
+    .right-block p{
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: -14px;
+    }
+    .clicker img{
+        margin-top: -10px;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .navbar{
+        flex-direction: column;
+    }
+    .container1 {
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+    .left-container{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .right-container img{
+        display: none;
+    }
+    #burger1{
+        margin-top: -2rem;
+        margin-left: 5px;
+        display:block;
+        width:auto;
+        height:17rem;
+        align-items: center;
+    }
+    .right-container{
+        padding: 20px;
+    }
+    .container2{
+        margin-top: -2.5rem;
+        flex-direction: column;
+        padding-top: 0.5px;
+    }
+    .bottom{
+        width: 30rem;
+        margin-left: -6.6rem;
+        gap:10px;
+    }
+    html,body{
+        width: 100%;
+        overflow-x: hidden;
+        margin:0;
+        padding: 0;;
+    }
+    .left-img img{
+        width:13rem;
+    }
+    .right-img img{
+        width: 12rem;
+    }
+    .right-block{
+        margin-left: 0;
+        margin-top: -5.5rem;
+    }
+    .left-container p{
+        width: 20rem;
+    }
+}
+@media only screen and (max-width:320px){
+    .left-container p{
+        width: 15rem;
+        font-size: 15px;
+    }
+    .left-container h1{
+        font-size: 22px;
+    }
+    .right-container img{
+        display:none 
+     }
+     #burger1{
+        display:none;
+     }
+     #burger{
+        margin-top: 9rem;
+        display:flex;
+     }
+    .bottom{
+        flex-direction: column;
+    }
+    .left-img img{
+        height: 13rem;
+        object-fit: cover;
+        width: 19.5rem;
+    }
+    .left-img{
+        margin-top: -12rem;
+        gap: 1rem;
+    }
+    .right-img{
+        margin-left: 6rem;
+    }
+    .right-img img{
+        width: 19.5rem;
+        margin-top: -11.6rem;
+    }
+}
+
